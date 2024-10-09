@@ -1,0 +1,76 @@
+[
+  {
+    "name": "HOME WORLD",
+    "level": 1,
+    "options": [
+      { "name": "Death World", "homeworld_id": 1 },
+      { "name": "Void Born", "homeworld_id": 2 },
+      { "name": "Forge World", "homeworld_id": 3 },
+      { "name": "Hive World", "homeworld_id": 4 },
+      { "name": "Imperial World", "homeworld_id": 5 },
+      { "name": "Noble Born", "homeworld_id": 6 }
+    ]
+  },
+  {
+    "name": "BIRTHRIGHT",
+    "level": 2,
+    "options": [
+      { "name": "Scavenger" },
+      { "name": "Scapegrace" },
+      { "name": "Stubjack" },
+      { "name": "Child of the Creed" },
+      { "name": "Savant" },
+      { "name": "Vaunted" }
+    ]
+  },
+  {
+    "name": "LURE OF THE VOID",
+    "level": 3,
+    "options": [
+      { "name": "Tainted" },
+      { "name": "Criminal" },
+      { "name": "Renegade" },
+      { "name": "Duty Bound" },
+      { "name": "Zealot" },
+      { "name": "Chosen by Destiny" }
+    ]
+  },
+  {
+    "name": "TRIALS AND TRAVAILS",
+    "level": 4,
+    "options": [
+      { "name": "The Hand of War" },
+      { "name": "Press-ganged" },
+      { "name": "Calamity" },
+      { "name": "Ship-Lorn" },
+      { "name": "Dark Voyage" },
+      { "name": "High Vendetta" }
+    ]
+  },
+  {
+    "name": "MOTIVATION",
+    "level": 5,
+    "options": [
+      { "name": "Endurance" },
+      { "name": "Fortune" },
+      { "name": "Vengeance" },
+      { "name": "Renown" },
+      { "name": "Pride" },
+      { "name": "Prestige" }
+    ]
+  },
+  {
+    "name": "CAREER",
+    "level": 6,
+    "options": [
+      { "name": "Astropath Transcendent" },
+      { "name": "Arch-Militant" },
+      { "name": "Void-Master" },
+      { "name": "Explorator" },
+      { "name": "Missionary" },
+      { "name": "Seneschal" },
+      { "name": "Navigator" },
+      { "name": "Rogue Trader" }
+    ]
+  }
+]
