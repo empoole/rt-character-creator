@@ -1,11 +1,11 @@
 // Finish this later
 
 export default function StatRoller() {
-  // players can roll all stats at once, or one at a time
-  // players can assign rolls as soon as they're rolled or once all rolls are completed
+    // players can roll all stats at once, or one at a time
+    // players can assign rolls as soon as they're rolled or once all rolls are completed
 
-  // alternate
-  /**
+    // alternate
+    /**
 An alternate method for generating
 Characteristic scores is to give each player a
 number of Characteristic points that he may assign as
@@ -16,5 +16,5 @@ more than 20 to any one Characteristic. This method
 will generate characters with slightly higher than
 average scores.
    */
-  return <div></div>;
+    return <div></div>
 }

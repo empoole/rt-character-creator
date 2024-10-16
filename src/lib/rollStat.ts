@@ -1,4 +1,4 @@
-import rollDice from "./rollDice";
+import rollDice from './rollDice'
 
 /**
  * Generate a single stat value for a character
@@ -7,15 +7,15 @@ import rollDice from "./rollDice";
  * @takeHighest takes the highest rolls if true, lowest rolls if false (default true)
  */
 const rollStat = (diceRolled = 2, rollsTaken = 2, takeHighest = true) => {
-  const results = rollDice(diceRolled, 10, false) as number[];
+    const results = rollDice(diceRolled, 10, false) as number[]
 
-  if (takeHighest) {
-    results.sort((a, b) => b - a);
-  } else {
-    results.sort((a, b) => a - b);
-  }
+    if (takeHighest) {
+        results.sort((a, b) => b - a)
+    } else {
+        results.sort((a, b) => a - b)
+    }
 
-  return results.slice(0, rollsTaken).reduce((acc, curr) => acc + curr) + 25;
-};
+    return results.slice(0, rollsTaken).reduce((acc, curr) => acc + curr) + 25
+}
 
-export default rollStat;
+export default rollStat

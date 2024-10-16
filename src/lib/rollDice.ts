@@ -7,21 +7,21 @@
  * @return  {number | number[]}  The sum of all dice rolled, or an array of each individual roll value
  */
 const rollDice = (
-  count: number,
-  type: number,
-  returnSum = true
+    count: number,
+    type: number,
+    returnSum = true
 ): number | number[] => {
-  const results = [];
+    const results = []
 
-  for (let i = 0; i < count; i++) {
-    results.push(Math.ceil(Math.random() * type));
-  }
+    for (let i = 0; i < count; i++) {
+        results.push(Math.ceil(Math.random() * type))
+    }
 
-  if (returnSum) {
-    return results.reduce((acc, curr) => acc + curr);
-  }
+    if (returnSum) {
+        return results.reduce((acc, curr) => acc + curr)
+    }
 
-  return results;
-};
+    return results
+}
 
-export default rollDice;
+export default rollDice

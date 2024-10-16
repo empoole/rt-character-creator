@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Endurance" },
+    { "id": 2, "name": "Fortune" },
+    { "id": 3, "name": "Vengeance" },
+    { "id": 4, "name": "Renown" },
+    { "id": 5, "name": "Pride" },
+    { "id": 6, "name": "Prestige" }
+]

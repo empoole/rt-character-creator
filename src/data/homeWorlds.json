@@ -1,213 +1,234 @@
 [
-  {
-    "id": 1,
-    "tilte": "DEATH WORLD",
-    "fluff": {
-      "quote": "Death worlds are teeming with threats to survival, meaning that those who thrive on such planets are unlike anyone else. Peril and violence have always been a part of your life, and you are stronger because of it.  You are aggressive and inured to hardship, proficient at staying alive where others cannot, and aloof from your fellow man.",
-      "description": "Upon death worlds, the plants, beasts, and sometimes even the environment itself takes aggressive and destructive forms inimical to human life. Whilst exceptionally difficult to colonise, many death worlds possess valuable resources that require an outpost or other human presence upon the planet’s surface to harvest. Death worlders often band together in tribes, clans, gangs, or other social groups in order to survive. An upbringing in such a harsh environment breeds very hardy and resilient examples of the human race—those tested and found wanting die young."
+    {
+        "id": 1,
+        "tilte": "DEATH WORLD",
+        "fluff": {
+            "quote": "Death worlds are teeming with threats to survival, meaning that those who thrive on such planets are unlike anyone else. Peril and violence have always been a part of your life, and you are stronger because of it.  You are aggressive and inured to hardship, proficient at staying alive where others cannot, and aloof from your fellow man.",
+            "description": "Upon death worlds, the plants, beasts, and sometimes even the environment itself takes aggressive and destructive forms inimical to human life. Whilst exceptionally difficult to colonise, many death worlds possess valuable resources that require an outpost or other human presence upon the planet’s surface to harvest. Death worlders often band together in tribes, clans, gangs, or other social groups in order to survive. An upbringing in such a harsh environment breeds very hardy and resilient examples of the human race—those tested and found wanting die young."
+        },
+        "modifiers": {
+            "strength": 5,
+            "toughness": 5,
+            "willpower": -5,
+            "fellowship": -5
+        },
+        "skills": [{ "name": "Survival", "trained": true, "basic": true }],
+        "talents": [
+            { "id": 1, "name": "Jaded", "optional": true, "blocks": [2] },
+            {
+                "id": 2,
+                "name": "Resistance (Poisons)",
+                "optional": true,
+                "blocks": [1]
+            },
+            {
+                "id": 3,
+                "name": "Melee Weapon Training (Primitive)",
+                "optional": false,
+                "blocks": []
+            }
+        ],
+        "bonuses": ["+10 to resist Pinning and Shock"],
+        "penalties": [
+            "-10 penalty to all Interaction Skill Tests made in formal surroundings"
+        ],
+        "special_abilities": [],
+        "starting_wounds": "(toughness * 2) + 2 + 1d5",
+        "fate_points": { "5": 2, "10": 3 },
+        "fate_points_description": "Roll 1d10. On a 1-5, the death worlder starts with 2 Fate Points. On a 6-10, they start with 3."
     },
-    "modifiers": {
-      "strength": 5,
-      "toughness": 5,
-      "willpower": -5,
-      "fellowship": -5
-    },
-    "skills": [{ "name": "Survival", "trained": true, "basic": true }],
-    "talents": [
-      { "id": 1, "name": "Jaded", "optional": true, "blocks": [2] },
-      {
+    {
         "id": 2,
-        "name": "Resistance (Poisons)",
-        "optional": true,
-        "blocks": [1]
-      },
-      {
+        "title": "VOID BORN",
+        "fluff": {
+            "quote": "You were not born on one of the Emperor’s worlds, but instead on a vast ship in the depths of space—perhaps even in the warp itself. Why this sets you apart from your fellow man is unknown, but the way you look, act, and think is somehow different. You have been raised in the company of voidfarers and psykers, and what other men fear or loathe is commonplace to you.",
+            "description": "Not merely star travellers but the products of many generations passed in the darkness between worlds, the void born are relatively few among the teeming multitudes of humanity, but singular, and form a disparate and odd collection of misfits, strangers, and other ill-omened folk, perhaps birthed in the belly of a vessel that has spent centuries charting its course through the stars or aboard an ancient orbital satellite. The void born are often considered to be somehow touched by the taint of the warp, or at least associated with the many and unfathomable dangers of the outer darkness by the common well of the Imperium. Most consider them bringers of bad fortune and ill-tidings, secretive, and untrustworthy."
+        },
+        "modifiers": { "strength": -5, "willpower": 5 },
+        "skills": [
+            {
+                "name": "Speak Language (Ship Dialect)",
+                "trained": true,
+                "basic": true
+            },
+            {
+                "name": "Navigation (Stellar) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            {
+                "name": "Pilot (Spacecraft) (Ag)",
+                "trained": false,
+                "basic": true
+            }
+        ],
+        "talents": [],
+        "bonuses": [],
+        "penalties": [
+            "-5 penalty on all Fellowship Tests made to interact with non-void born humans"
+        ],
+        "special_abilities": [
+            "Whenever a void born character spends a Fate Point (though not if he burns one), roll a 1d10. On the roll of a natural 9, the Fate Point is not lost",
+            "Immune to space travel sickness",
+            "Zero- or low-gravity environments are not considered Difficult Terrain"
+        ],
+        "starting_wounds": "(toughness * 2) + 1d5",
+        "fate_points": { "5": 3, "10": 4 },
+        "fate_points_description": "Roll 1d10. On a 1-5, the void born starts with 3 Fate Points. On a 6-10, they start with 4."
+    },
+    {
         "id": 3,
-        "name": "Melee Weapon Training (Primitive)",
-        "optional": false,
-        "blocks": []
-      }
-    ],
-    "bonuses": ["+10 to resist Pinning and Shock"],
-    "penalties": [
-      "-10 penalty to all Interaction Skill Tests made in formal surroundings"
-    ],
-    "special_abilities": [],
-    "starting_wounds": "(toughness * 2) + 2 + 1d5",
-    "fate_points": { "5": 2, "10": 3 },
-    "fate_points_description": "Roll 1d10. On a 1-5, the death worlder starts with 2 Fate Points. On a 6-10, they start with 3."
-  },
-  {
-    "id": 2,
-    "title": "VOID BORN",
-    "fluff": {
-      "quote": "You were not born on one of the Emperor’s worlds, but instead on a vast ship in the depths of space—perhaps even in the warp itself. Why this sets you apart from your fellow man is unknown, but the way you look, act, and think is somehow different. You have been raised in the company of voidfarers and psykers, and what other men fear or loathe is commonplace to you.",
-      "description": "Not merely star travellers but the products of many generations passed in the darkness between worlds, the void born are relatively few among the teeming multitudes of humanity, but singular, and form a disparate and odd collection of misfits, strangers, and other ill-omened folk, perhaps birthed in the belly of a vessel that has spent centuries charting its course through the stars or aboard an ancient orbital satellite. The void born are often considered to be somehow touched by the taint of the warp, or at least associated with the many and unfathomable dangers of the outer darkness by the common well of the Imperium. Most consider them bringers of bad fortune and ill-tidings, secretive, and untrustworthy."
+        "title": "FORGE WORLD",
+        "fluff": {
+            "quote": "You were born in the shadow of the Omnissiah and all your life you have been surrounded by the great wonders and dire terrors of the Machine God’s arts. Ever since you were born, you have been weighed, measured, codified, and tested so that your masters might find your place in the great pattern. This unforgiving process has fitted you well for survival and supremacy.",
+            "description": "The domains of the Adeptus Mechanicus are many, from the ceaseless industry of the iron realms of the forge worlds, to labyrinthine orbitals and distant research outposts, to the nomadic and self-contained void caravans of the explorator fleets. They are an empire within an empire, distinct and yet interwoven with the fabric of the Imperium since its founding. Their masters are as ancient, wise, mysterious, and cold as the machineries they tend. Beyond the forge worlds, this Home World option also includes those born and raised on city-sized orbital stations, Mechanicus-administered colonies (often called demesnes), research outposts, and restless explorator fleets, for the rites, rituals, and beliefs of the Omnissiah also govern those places."
+        },
+        "modifiers": { "weapon_skill": -5, "intelligence": 5 },
+        "skills": [
+            {
+                "name": "Common Lore (Tech) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            {
+                "name": " Common Lore (Machine Cult) (Int)",
+                "trained": false,
+                "basic": true
+            }
+        ],
+        "talents": [
+            {
+                "id": 4,
+                "name": "Technical Knock",
+                "optional": false,
+                "blocks": []
+            }
+        ],
+        "bonuses": [],
+        "penalties": [
+            "-10 penalty on Tests involving knowledge of the Imperial Creed",
+            "-5 penalty on Fellowship Tests to interact with members of the Ecclesiarchy in formal settings."
+        ],
+        "special_abilities": [
+            "A starting forge world character may increase a Characteristic of their choice by +3"
+        ],
+        "starting_wounds": "(toughness * 2) + 1 + 1d5",
+        "fate_points": {
+            "5": 2,
+            "9": 3,
+            "10": 4
+        },
+        "fate_points_description": "Roll 1d10. On a 1-5, the forge worlder starts with 2 Fate Points. On a 6-9, they start with 3 and on a 10 they start with 4."
     },
-    "modifiers": { "strength": -5, "willpower": 5 },
-    "skills": [
-      {
-        "name": "Speak Language (Ship Dialect)",
-        "trained": true,
-        "basic": true
-      },
-      { "name": "Navigation (Stellar) (Int)", "trained": false, "basic": true },
-      { "name": "Pilot (Spacecraft) (Ag)", "trained": false, "basic": true }
-    ],
-    "talents": [],
-    "bonuses": [],
-    "penalties": [
-      "-5 penalty on all Fellowship Tests made to interact with non-void born humans"
-    ],
-    "special_abilities": [
-      "Whenever a void born character spends a Fate Point (though not if he burns one), roll a 1d10. On the roll of a natural 9, the Fate Point is not lost",
-      "Immune to space travel sickness",
-      "Zero- or low-gravity environments are not considered Difficult Terrain"
-    ],
-    "starting_wounds": "(toughness * 2) + 1d5",
-    "fate_points": { "5": 3, "10": 4 },
-    "fate_points_description": "Roll 1d10. On a 1-5, the void born starts with 3 Fate Points. On a 6-10, they start with 4."
-  },
-  {
-    "id": 3,
-    "title": "FORGE WORLD",
-    "fluff": {
-      "quote": "You were born in the shadow of the Omnissiah and all your life you have been surrounded by the great wonders and dire terrors of the Machine God’s arts. Ever since you were born, you have been weighed, measured, codified, and tested so that your masters might find your place in the great pattern. This unforgiving process has fitted you well for survival and supremacy.",
-      "description": "The domains of the Adeptus Mechanicus are many, from the ceaseless industry of the iron realms of the forge worlds, to labyrinthine orbitals and distant research outposts, to the nomadic and self-contained void caravans of the explorator fleets. They are an empire within an empire, distinct and yet interwoven with the fabric of the Imperium since its founding. Their masters are as ancient, wise, mysterious, and cold as the machineries they tend. Beyond the forge worlds, this Home World option also includes those born and raised on city-sized orbital stations, Mechanicus-administered colonies (often called demesnes), research outposts, and restless explorator fleets, for the rites, rituals, and beliefs of the Omnissiah also govern those places."
-    },
-    "modifiers": { "weapon_skill": -5, "intelligence": 5 },
-    "skills": [
-      { "name": "Common Lore (Tech) (Int)", "trained": false, "basic": true },
-      {
-        "name": " Common Lore (Machine Cult) (Int)",
-        "trained": false,
-        "basic": true
-      }
-    ],
-    "talents": [
-      {
+    {
         "id": 4,
-        "name": "Technical Knock",
-        "optional": false,
-        "blocks": []
-      }
-    ],
-    "bonuses": [],
-    "penalties": [
-      "-10 penalty on Tests involving knowledge of the Imperial Creed",
-      "-5 penalty on Fellowship Tests to interact with members of the Ecclesiarchy in formal settings."
-    ],
-    "special_abilities": [
-      "A starting forge world character may increase a Characteristic of their choice by +3"
-    ],
-    "starting_wounds": "(toughness * 2) + 1 + 1d5",
-    "fate_points": {
-      "5": 2,
-      "9": 3,
-      "10": 4
+        "title": "HIVE WORLD",
+        "fluff": {
+            "quote": "The great hives are not like the lesser cities of other worlds in the Imperium, and you are not like the common men and women who live there. Technology has surrounded you all your life, and you find its rarity elsewhere bemusing. You are an adventurer, an opportunist— more inquisitive than your fellows and certainly quicker on the draw!",
+            "description": "Hive worlds are home to countless teeming billions. The population is so dense that frequently great swathes of the surface of the world are covered with gargantuan cities stretching from horizon to horizon. Many hivers labour in thankless obscurity, manning huge manufactories that churn out endless streams of weapons, chemicals, or other vital goods. Others run with violent gangs in the dark of the underhives, living by their wits and savagery in an endless struggle for survival."
+        },
+        "modifiers": { "toughness": -5, "fellowship": 5 },
+        "skills": [
+            {
+                "name": "Speak Language (Hive Dialect) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            { "name": "Tech-Use (Int)", "trained": false, "basic": true }
+        ],
+        "talents": [],
+        "bonuses": ["+1 bonus to Initiative rolls"],
+        "penalties": [
+            "-10 penalty to all Survival (Int) Test",
+            "While outside of a “proper hab” (e.g., places without manufactured goods, solid ceilings, and electrical power) the hiver suffers a -5 penalty to all Intelligence Tests"
+        ],
+        "special_abilities": [
+            "Crowds do not count as Difficult Terrain",
+            "When Running or Charging through a dense crowd, hivers take no penalty to the Agility Test to keep their feet."
+        ],
+        "starting_wounds": "(toughness * 2) + 1 + 1d5",
+        "fate_points": { "5": 2, "8": 3, "9": 4 },
+        "fate_points_description": "Roll 1d10. On a 1-5, the hive worlder starts with 2 Fate Points. On a 6-8, they start with 3 and on a 9-10 they start with 4."
     },
-    "fate_points_description": "Roll 1d10. On a 1-5, the forge worlder starts with 2 Fate Points. On a 6-9, they start with 3 and on a 10 they start with 4."
-  },
-  {
-    "id": 4,
-    "title": "HIVE WORLD",
-    "fluff": {
-      "quote": "The great hives are not like the lesser cities of other worlds in the Imperium, and you are not like the common men and women who live there. Technology has surrounded you all your life, and you find its rarity elsewhere bemusing. You are an adventurer, an opportunist— more inquisitive than your fellows and certainly quicker on the draw!",
-      "description": "Hive worlds are home to countless teeming billions. The population is so dense that frequently great swathes of the surface of the world are covered with gargantuan cities stretching from horizon to horizon. Many hivers labour in thankless obscurity, manning huge manufactories that churn out endless streams of weapons, chemicals, or other vital goods. Others run with violent gangs in the dark of the underhives, living by their wits and savagery in an endless struggle for survival."
+    {
+        "id": 5,
+        "title": "IMPERIAL WORLD",
+        "fluff": {
+            "quote": "You hail from an Imperial world, one of a million planets united by a belief in the immortal God-Emperor of Mankind. Soldier, fanatic, thief, mercenary, noble: these are some of your many possible backgrounds. Whatever your previous calling, you are now an Explorer of the void, and your adventure has only just begun.",
+            "description": "A bewildering variety of worlds are known to the Imperium. Hailing from hyper-technological democratic societies to grimy feudal populations, the inhabitants of countless worlds offer fealty and devotion to the God-Emperor of Mankind and the Imperial Creed taught by His servants."
+        },
+        "modifiers": { "willpower": 3 },
+        "skills": [
+            {
+                "name": "Common Lore (Imperial Creed) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            {
+                "name": "Common Lore (Imperium) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            {
+                "name": "Common Lore (War) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            { "name": "Literacy (Int)", "trained": false, "basic": true },
+            {
+                "name": "Speak Language (High Gothic) (Int)",
+                "trained": false,
+                "basic": true
+            }
+        ],
+        "talents": [],
+        "bonuses": [],
+        "penalties": ["-5 penalty on Forbidden Lore (Int) Tests"],
+        "special_abilities": [],
+        "starting_wounds": "(toughness * 2) + 1d5",
+        "fate_points": { "8": 3, "9": 4 },
+        "fate_points_description": "Roll 1d10. On a 1-8, the hive worlder starts with 3 Fate Points. On a 9-10, they start with 4."
     },
-    "modifiers": { "toughness": -5, "fellowship": 5 },
-    "skills": [
-      {
-        "name": "Speak Language (Hive Dialect) (Int)",
-        "trained": false,
-        "basic": true
-      },
-      { "name": "Tech-Use (Int)", "trained": false, "basic": true }
-    ],
-    "talents": [],
-    "bonuses": ["+1 bonus to Initiative rolls"],
-    "penalties": [
-      "-10 penalty to all Survival (Int) Test",
-      "While outside of a “proper hab” (e.g., places without manufactured goods, solid ceilings, and electrical power) the hiver suffers a -5 penalty to all Intelligence Tests"
-    ],
-    "special_abilities": [
-      "Crowds do not count as Difficult Terrain",
-      "When Running or Charging through a dense crowd, hivers take no penalty to the Agility Test to keep their feet."
-    ],
-    "starting_wounds": "(toughness * 2) + 1 + 1d5",
-    "fate_points": { "5": 2, "8": 3, "9": 4 },
-    "fate_points_description": "Roll 1d10. On a 1-5, the hive worlder starts with 2 Fate Points. On a 6-8, they start with 3 and on a 9-10 they start with 4."
-  },
-  {
-    "id": 5,
-    "title": "IMPERIAL WORLD",
-    "fluff": {
-      "quote": "You hail from an Imperial world, one of a million planets united by a belief in the immortal God-Emperor of Mankind. Soldier, fanatic, thief, mercenary, noble: these are some of your many possible backgrounds. Whatever your previous calling, you are now an Explorer of the void, and your adventure has only just begun.",
-      "description": "A bewildering variety of worlds are known to the Imperium. Hailing from hyper-technological democratic societies to grimy feudal populations, the inhabitants of countless worlds offer fealty and devotion to the God-Emperor of Mankind and the Imperial Creed taught by His servants."
-    },
-    "modifiers": { "willpower": 3 },
-    "skills": [
-      {
-        "name": "Common Lore (Imperial Creed) (Int)",
-        "trained": false,
-        "basic": true
-      },
-      {
-        "name": "Common Lore (Imperium) (Int)",
-        "trained": false,
-        "basic": true
-      },
-      { "name": "Common Lore (War) (Int)", "trained": false, "basic": true },
-      { "name": "Literacy (Int)", "trained": false, "basic": true },
-      {
-        "name": "Speak Language (High Gothic) (Int)",
-        "trained": false,
-        "basic": true
-      }
-    ],
-    "talents": [],
-    "bonuses": [],
-    "penalties": ["-5 penalty on Forbidden Lore (Int) Tests"],
-    "special_abilities": [],
-    "starting_wounds": "(toughness * 2) + 1d5",
-    "fate_points": { "8": 3, "9": 4 },
-    "fate_points_description": "Roll 1d10. On a 1-8, the hive worlder starts with 3 Fate Points. On a 9-10, they start with 4."
-  },
-  {
-    "id": 6,
-    "title": "NOBLE BORN",
-    "fluff": {
-      "quote": "Some things can be taught, others acquired by force or trade. But they are all inconsequential. The only thing that truly matters is the lineage of your blood, the noble worth that flowed in your veins from the very day you were born.",
-      "description": "The high nobility of the Imperium are an enormously wealthy and powerful elite, a breed apart from the common masses they rule. Many noble houses span the stars in an intricate web of kinship, arranged marriages, and political alliances that ensure power and influence will ever continue, even if the fortunes of a single world fail. The products of centuries—or even millennia—of tech-assisted breeding and cultured refinement, these noble lineages hold the history of the Imperium itself in their blood. They are the finest that humanity has to offer—or so they would have you believe, at any rate."
-    },
-    "modifiers": { "willpower": -5, "fellowship": 5 },
-    "skills": [
-      { "name": "Literacy (Int)", "trained": false, "basic": true },
-      {
-        "name": "Speak Language (High Gothic) (Int)",
-        "trained": false,
-        "basic": true
-      },
-      {
-        "name": "Speak Language (Low Gothic) (Int)",
-        "trained": false,
-        "basic": true
-      }
-    ],
-    "talents": [
-      { "id": 5, "name": "Peer (Nobility)", "optional": false, "blocks": [] }
-    ],
-    "bonuses": [
-      "+10 bonus on Interaction Skill Tests when dealing with high authority and in formal situations"
-    ],
-    "penalties": [],
-    "special_abilities": [
-      "+1 to the group’s starting Profit Factor",
-      "Gain one additional Peer from the following list: Academics, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Government, Mercantile, Military, or Underworld",
-      "Starting noble born characters have powerful enemies, perhaps in the shape of a rival noble house or some other powerful group. The details of these enemies are left to the player and the Game Master to define"
-    ],
-    "starting_wounds": "(toughness * 2) + 1d5",
-    "fate_points": { "3": 2, "9": 3, "10": 4 },
-    "fate_points_description": "Roll 1d10. On a 1-3, the noble born starts with 2 Fate Points. On a 4-9, they start with 3 and on a 10 they start with 4."
-  }
+    {
+        "id": 6,
+        "title": "NOBLE BORN",
+        "fluff": {
+            "quote": "Some things can be taught, others acquired by force or trade. But they are all inconsequential. The only thing that truly matters is the lineage of your blood, the noble worth that flowed in your veins from the very day you were born.",
+            "description": "The high nobility of the Imperium are an enormously wealthy and powerful elite, a breed apart from the common masses they rule. Many noble houses span the stars in an intricate web of kinship, arranged marriages, and political alliances that ensure power and influence will ever continue, even if the fortunes of a single world fail. The products of centuries—or even millennia—of tech-assisted breeding and cultured refinement, these noble lineages hold the history of the Imperium itself in their blood. They are the finest that humanity has to offer—or so they would have you believe, at any rate."
+        },
+        "modifiers": { "willpower": -5, "fellowship": 5 },
+        "skills": [
+            { "name": "Literacy (Int)", "trained": false, "basic": true },
+            {
+                "name": "Speak Language (High Gothic) (Int)",
+                "trained": false,
+                "basic": true
+            },
+            {
+                "name": "Speak Language (Low Gothic) (Int)",
+                "trained": false,
+                "basic": true
+            }
+        ],
+        "talents": [
+            {
+                "id": 5,
+                "name": "Peer (Nobility)",
+                "optional": false,
+                "blocks": []
+            }
+        ],
+        "bonuses": [
+            "+10 bonus on Interaction Skill Tests when dealing with high authority and in formal situations"
+        ],
+        "penalties": [],
+        "special_abilities": [
+            "+1 to the group’s starting Profit Factor",
+            "Gain one additional Peer from the following list: Academics, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Government, Mercantile, Military, or Underworld",
+            "Starting noble born characters have powerful enemies, perhaps in the shape of a rival noble house or some other powerful group. The details of these enemies are left to the player and the Game Master to define"
+        ],
+        "starting_wounds": "(toughness * 2) + 1d5",
+        "fate_points": { "3": 2, "9": 3, "10": 4 },
+        "fate_points_description": "Roll 1d10. On a 1-3, the noble born starts with 2 Fate Points. On a 4-9, they start with 3 and on a 10 they start with 4."
+    }
 ]

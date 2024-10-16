@@ -1,0 +1,10 @@
+[
+    { "id": 1, "name": "Astropath Transcendent" },
+    { "id": 2, "name": "Arch-Militant" },
+    { "id": 3, "name": "Void-Master" },
+    { "id": 4, "name": "Explorator" },
+    { "id": 5, "name": "Missionary" },
+    { "id": 6, "name": "Seneschal" },
+    { "id": 7, "name": "Navigator" },
+    { "id": 8, "name": "Rogue Trader" }
+]
