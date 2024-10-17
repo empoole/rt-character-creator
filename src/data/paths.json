@@ -3,74 +3,74 @@
         "name": "HOME WORLD",
         "level": 1,
         "options": [
-            { "name": "Death World", "homeworld_id": 1 },
-            { "name": "Void Born", "homeworld_id": 2 },
-            { "name": "Forge World", "homeworld_id": 3 },
-            { "name": "Hive World", "homeworld_id": 4 },
-            { "name": "Imperial World", "homeworld_id": 5 },
-            { "name": "Noble Born", "homeworld_id": 6 }
+            { "name": "Death World", "id": 1 },
+            { "name": "Void Born", "id": 2 },
+            { "name": "Forge World", "id": 3 },
+            { "name": "Hive World", "id": 4 },
+            { "name": "Imperial World", "id": 5 },
+            { "name": "Noble Born", "id": 6 }
         ]
     },
     {
         "name": "BIRTHRIGHT",
         "level": 2,
         "options": [
-            { "name": "Scavenger", "birthright_id": 1 },
-            { "name": "Scapegrace", "birthright_id": 2 },
-            { "name": "Stubjack", "birthright_id": 3 },
-            { "name": "Child of the Creed", "birthright_id": 4 },
-            { "name": "Savant", "birthright_id": 5 },
-            { "name": "Vaunted", "birthright_id": 6 }
+            { "name": "Scavenger", "id": 1 },
+            { "name": "Scapegrace", "id": 2 },
+            { "name": "Stubjack", "id": 3 },
+            { "name": "Child of the Creed", "id": 4 },
+            { "name": "Savant", "id": 5 },
+            { "name": "Vaunted", "id": 6 }
         ]
     },
     {
         "name": "LURE OF THE VOID",
         "level": 3,
         "options": [
-            { "name": "Tainted", "lure_id": 1 },
-            { "name": "Criminal", "lure_id": 2 },
-            { "name": "Renegade", "lure_id": 3 },
-            { "name": "Duty Bound", "lure_id": 4 },
-            { "name": "Zealot", "lure_id": 5 },
-            { "name": "Chosen by Destiny", "lure_id": 6 }
+            { "name": "Tainted", "id": 1 },
+            { "name": "Criminal", "id": 2 },
+            { "name": "Renegade", "id": 3 },
+            { "name": "Duty Bound", "id": 4 },
+            { "name": "Zealot", "id": 5 },
+            { "name": "Chosen by Destiny", "id": 6 }
         ]
     },
     {
         "name": "TRIALS AND TRAVAILS",
         "level": 4,
         "options": [
-            { "name": "The Hand of War", "trials_id": 1 },
-            { "name": "Press-ganged", "trials_id": 2 },
-            { "name": "Calamity", "trials_id": 3 },
-            { "name": "Ship-Lorn", "trials_id": 4 },
-            { "name": "Dark Voyage", "trials_id": 5 },
-            { "name": "High Vendetta", "trials_id": 6 }
+            { "name": "The Hand of War", "id": 1 },
+            { "name": "Press-ganged", "id": 2 },
+            { "name": "Calamity", "id": 3 },
+            { "name": "Ship-Lorn", "id": 4 },
+            { "name": "Dark Voyage", "id": 5 },
+            { "name": "High Vendetta", "id": 6 }
         ]
     },
     {
         "name": "MOTIVATION",
         "level": 5,
         "options": [
-            { "name": "Endurance", "motivation_id": 1 },
-            { "name": "Fortune", "motivation_id": 2 },
-            { "name": "Vengeance", "motivation_id": 3 },
-            { "name": "Renown", "motivation_id": 4 },
-            { "name": "Pride", "motivation_id": 5 },
-            { "name": "Prestige", "motivation_id": 6 }
+            { "name": "Endurance", "id": 1 },
+            { "name": "Fortune", "id": 2 },
+            { "name": "Vengeance", "id": 3 },
+            { "name": "Renown", "id": 4 },
+            { "name": "Pride", "id": 5 },
+            { "name": "Prestige", "id": 6 }
         ]
     },
     {
         "name": "CAREER",
         "level": 6,
         "options": [
-            { "name": "Astropath Transcendent", "career_id": 1 },
-            { "name": "Arch-Militant", "career_id": 2 },
-            { "name": "Void-Master", "career_id": 3 },
-            { "name": "Explorator", "career_id": 4 },
-            { "name": "Missionary", "career_id": 5 },
-            { "name": "Seneschal", "career_id": 6 },
-            { "name": "Navigator", "career_id": 7 },
-            { "name": "Rogue Trader", "career_id": 8 }
+            { "name": "Astropath Transcendent", "id": 1 },
+            { "name": "Arch-Militant", "id": 2 },
+            { "name": "Void-Master", "id": 3 },
+            { "name": "Explorator", "id": 4 },
+            { "name": "Missionary", "id": 5 },
+            { "name": "Seneschal", "id": 6 },
+            { "name": "Navigator", "id": 7 },
+            { "name": "Rogue Trader", "id": 8 }
         ]
     }
 ]

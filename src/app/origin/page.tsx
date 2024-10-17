@@ -1,10 +1,11 @@
-import ImmersiveModeModal from './components/ImmerisveModeModal'
+import InitOriginPathMap from './components/server/InitOriginPathMap'
+import InitImmerisveModeModal from './components/server/InitImmerisveModeModal'
 
 export default function Page() {
     return (
         <>
-            {/* Origin Path Map */}
-            <ImmersiveModeModal />
+            <InitOriginPathMap />
+            <InitImmerisveModeModal />
         </>
     )
 }
