@@ -4,19 +4,21 @@ import rollStat from '@/lib/rollStat'
 import { StatBlock } from '@/types/StatBlock'
 import { useState } from 'react'
 
-export default function CharacteristicsTable({
-    rolls,
-    setRolls,
-}: {
-    rolls: Int32Array
-    setRolls: React.Dispatch<React.SetStateAction<Int32Array>>
-}) {
+import { useCharacteristicsSettings } from '@/context/SettingsContext'
+
+export default function CharacteristicsTable() {
     const [stats, setStats] = useState(new StatBlock())
+    const { rollsPerStat, rollsTakenPerStat, takeHighestRollsPerStat } =
+        useCharacteristicsSettings()
 
     const rollAll = () => {
         const rolls = new StatBlock()
         Object.keys(stats).forEach((stat) => {
-            rolls[stat as keyof StatBlock] = rollStat()
+            rolls[stat as keyof StatBlock] = rollStat(
+                rollsPerStat,
+                rollsTakenPerStat,
+                takeHighestRollsPerStat
+            )
         })
 
         setStats({ ...rolls })

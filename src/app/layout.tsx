@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'Rogue Trader Origin Path',
+    title: 'Rogue Trader Character Creator',
     description:
-        'A tool for creating origin paths for the Rogue Trader table top rpg',
+        'A tool for creating characters for the Rogue Trader table top rpg',
 }
 
 export default function RootLayout({

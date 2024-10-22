@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { CharacteristicsSettingsProvider } from '@/context/SettingsContext'
 
 import DicePool from './components/client/DicePool'
 import CharacteristicsTable from './components/client/CharacteristicsTable'
@@ -22,36 +23,11 @@ will generate characters with slightly higher than
 average scores.
    */
 
-/*
-TODO: Context API for settings
-*/
-
-export default function Page({
-    totalStatRolls = 9,
-}: {
-    totalStatRolls: number
-}) {
-    const [rolls, setRolls] = useState(new Int32Array(totalStatRolls))
-    const [statRollsCount, setStatRollsCount] = useState(totalStatRolls)
-
+export default function Page() {
     return (
-        <>
-            <div>
-                <input
-                    type="number"
-                    name="stat-rolls-count"
-                    value={statRollsCount}
-                    onChange={(e) =>
-                        setStatRollsCount(parseInt(e.target.value))
-                    }
-                />
-            </div>
-            <DicePool
-                totalStatRolls={statRollsCount}
-                rolls={rolls}
-                setRolls={setRolls}
-            />
-            <CharacteristicsTable rolls={rolls} setRolls={setRolls} />
-        </>
+        <CharacteristicsSettingsProvider>
+            <DicePool />
+            <CharacteristicsTable />
+        </CharacteristicsSettingsProvider>
     )
 }

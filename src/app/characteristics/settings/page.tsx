@@ -1,4 +1,27 @@
-export default function Page() {}
+import { useContext } from 'react'
+import { CharacteristicsSettingsContext } from '@/context/SettingsContext'
+
+export default function Page() {
+    const settings = useContext(CharacteristicsSettingsContext)
+
+    return (
+        <>
+            <label htmlFor="totalRollsInPool">
+                Total compelete stat rolls in dice pool
+                <input
+                    type="number"
+                    name="totalRollsInPool"
+                    value={settings.totalRollsInPool}
+                    onChange={(e) => {}}
+                />
+            </label>
+            <label htmlFor="totalRollsInPool">
+                Total compelete stat rolls in dice pool
+                <input type="number" name="totalRollsInPool" />
+            </label>
+        </>
+    )
+}
 
 /*
 
