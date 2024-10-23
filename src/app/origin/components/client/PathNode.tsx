@@ -51,7 +51,7 @@ export default function PathNode({
             <div className="flex">
                 <button>[ Details ]</button> {/* This opens the modal */}
                 <button
-                    onClick={(e) => {
+                    onClick={() => {
                         if (!disabled) {
                             setSelections({ ...selections, [level]: nodeId })
                             setEnabledOptions(getNextEnabledOptions(nodeId))

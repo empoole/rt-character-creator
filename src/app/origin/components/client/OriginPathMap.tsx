@@ -5,11 +5,7 @@ import PathNode from '@/app/origin/components/client/PathNode'
 import { LevelData } from '@/types/LevelData'
 import { NodeSelections } from '@/types/NodeSelections'
 
-export default async function OriginPathMap({
-    levels,
-}: {
-    levels: LevelData[]
-}) {
+export default function OriginPathMap({ levels }: { levels: LevelData[] }) {
     const [selections, setSelections] = useState({} as NodeSelections)
     const [nextLevelOptions, setNextLevelOptions] = useState([1, 2, 3, 4, 5, 6])
 
@@ -29,20 +25,22 @@ export default async function OriginPathMap({
                     <h3 className="text-center font-bold">{level.name}</h3>
                     <div className="flex justify-around content-center items-center">
                         <form action="">
-                            {level.options.map((node) => (
-                                <PathNode
-                                    key={node.id}
-                                    nodeId={node.id}
-                                    name={node.name}
-                                    level={level.level}
-                                    setSelections={setSelections}
-                                    selections={selections}
-                                    disabled={nextLevelOptions.includes(
-                                        node.id
-                                    )}
-                                    setEnabledOptions={setNextLevelOptions}
-                                />
-                            ))}
+                            {level.options.map((node) => {
+                                return (
+                                    <PathNode
+                                        key={node.id}
+                                        nodeId={node.id}
+                                        name={node.name}
+                                        level={level.level}
+                                        setSelections={setSelections}
+                                        selections={selections}
+                                        disabled={nextLevelOptions.includes(
+                                            node.id
+                                        )}
+                                        setEnabledOptions={setNextLevelOptions}
+                                    />
+                                )
+                            })}
                         </form>
                     </div>
                 </section>

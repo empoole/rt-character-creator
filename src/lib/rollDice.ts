@@ -11,7 +11,7 @@ const rollDice = (
     type: number,
     returnSum = true
 ): number | number[] => {
-    const results = []
+    const results: number[] = []
 
     for (let i = 0; i < count; i++) {
         results.push(Math.ceil(Math.random() * type))

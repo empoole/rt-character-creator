@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { CharacteristicsSettingsProvider } from '@/context/SettingsContext'
 
 import DicePool from './components/client/DicePool'

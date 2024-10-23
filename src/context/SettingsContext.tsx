@@ -41,8 +41,8 @@ export const CharacteristicsSettingsProvider = ({
 }) => {
     const [settings, setSettings] = useState(defaultSettings)
 
-    const updateSettings = (newSettings: Settings) => {
-        setSettings({ ...newSettings })
+    const updateSettings = (newSettings: Partial<Settings>) => {
+        setSettings({ ...settings, ...newSettings })
     }
 
     return (

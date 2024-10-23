@@ -9,7 +9,8 @@ export default function DicePool() {
     // opt to roll a set of values then choose which to assign to
     // each stat
 
-    const { totalRollsInPool, rollsPerStat } = useCharacteristicsSettings()
+    const { totalRollsInPool, rollsPerStat, updateSettings } =
+        useCharacteristicsSettings()
 
     const [dicePool, setDicePool] = useState(new Int32Array(totalRollsInPool))
 
@@ -17,7 +18,15 @@ export default function DicePool() {
         <>
             <label htmlFor="dicePoolSize">
                 Dice to roll
-                <input type="number" name="dicePoolSize" />
+                <input
+                    type="number"
+                    name="dicePoolSize"
+                    onChange={(e) => {
+                        updateSettings({
+                            rollsPerStat: parseInt(e.target.value),
+                        })
+                    }}
+                />
                 <button
                     onClick={() => {
                         setDicePool(
@@ -34,7 +43,7 @@ export default function DicePool() {
                 <p>Rolls:</p>
                 <p>
                     {Array(dicePool).map((roll, index) => (
-                        <span key={index}>{roll}, </span>
+                        <span key={index}>{`${roll}, `}</span>
                     ))}
                 </p>
             </div>
