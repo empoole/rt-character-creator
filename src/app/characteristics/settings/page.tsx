@@ -1,8 +1,7 @@
-import { useContext } from 'react'
-import { CharacteristicsSettingsContext } from '@/context/SettingsContext'
+import { useCharacteristicsSettings } from '@/context/SettingsContext'
 
 export default function Page() {
-    const settings = useContext(CharacteristicsSettingsContext)
+    const settings = useCharacteristicsSettings()
 
     return (
         <>

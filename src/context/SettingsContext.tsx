@@ -7,6 +7,7 @@ type Settings = {
     totalRollsInPool: number
     reRollsPerStatRoll: number
     reRollsPerPool: number
+    useDicePool: boolean
 }
 
 interface CharacteristicsSettingsContextType {
@@ -16,7 +17,8 @@ interface CharacteristicsSettingsContextType {
     totalRollsInPool: number
     reRollsPerStatRoll: number
     reRollsPerPool: number
-    updateSettings: (newSettings: Settings) => void
+    useDicePool: boolean
+    updateSettings: (newSettings: Partial<Settings>) => void
 }
 
 const defaultSettings = {
@@ -26,6 +28,7 @@ const defaultSettings = {
     totalRollsInPool: 9, // Number of stat rolls the player can choose from (min 9)
     reRollsPerStatRoll: 0, // Number of rerolls allow for each stat
     reRollsPerPool: 0, // Number of times players can reroll dice from their pool
+    useDicePool: false, // Whether to use the dice pool or roll per stat method
 }
 
 const CharacteristicsSettingsContext =

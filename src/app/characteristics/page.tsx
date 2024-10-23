@@ -1,6 +1,9 @@
 'use client'
 
-import { CharacteristicsSettingsProvider } from '@/context/SettingsContext'
+import {
+    CharacteristicsSettingsProvider,
+    useCharacteristicsSettings,
+} from '@/context/SettingsContext'
 
 import DicePool from './components/client/DicePool'
 import CharacteristicsTable from './components/client/CharacteristicsTable'
@@ -23,9 +26,11 @@ average scores.
    */
 
 export default function Page() {
+    const settings = useCharacteristicsSettings()
+
     return (
         <CharacteristicsSettingsProvider>
-            <DicePool />
+            {settings.useDicePool && <DicePool />}
             <CharacteristicsTable />
         </CharacteristicsSettingsProvider>
     )
