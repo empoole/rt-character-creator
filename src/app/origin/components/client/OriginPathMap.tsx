@@ -34,9 +34,9 @@ export default function OriginPathMap({ levels }: { levels: LevelData[] }) {
                                         level={level.level}
                                         setSelections={setSelections}
                                         selections={selections}
-                                        disabled={nextLevelOptions.includes(
-                                            node.id
-                                        )}
+                                        disabled={
+                                            !nextLevelOptions.includes(node.id)
+                                        }
                                         setEnabledOptions={setNextLevelOptions}
                                     />
                                 )

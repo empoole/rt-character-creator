@@ -1,4 +1,4 @@
-import { useCharacteristicsSettings } from '@/context/SettingsContext'
+import { useCharacteristicsSettings } from '@/context/CharacteristicsSettingsContext'
 
 export default function Page() {
     const settings = useCharacteristicsSettings()

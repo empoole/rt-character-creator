@@ -5,7 +5,11 @@ import {
     CharacteristicModifiers,
 } from '@/types/HomeworldDetails'
 
-export default function DetailsModal({ data }: { data: HomeworldDetails }) {
+export default function HomeworldDetailsModal({
+    data,
+}: {
+    data: HomeworldDetails
+}) {
     return (
         <aside>
             <header>
@@ -28,7 +32,6 @@ export default function DetailsModal({ data }: { data: HomeworldDetails }) {
                                         stat as keyof CharacteristicModifiers
                                     ]
                                 }
-                                )
                             </li>
                         )
                     })}

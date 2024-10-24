@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { AppSettingsProvider } from '@/context/AppSettingsContext'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
     title: 'Rogue Trader Origin Path',
@@ -13,10 +16,14 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en">
-            <body>
-                <main>{children}</main>
-            </body>
-        </html>
+        <AppSettingsProvider>
+            <html lang="en">
+                <body>
+                    <Header />
+                    <main>{children}</main>
+                    <Footer />
+                </body>
+            </html>
+        </AppSettingsProvider>
     )
 }

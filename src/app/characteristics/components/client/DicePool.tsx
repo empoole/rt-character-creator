@@ -2,7 +2,7 @@
 
 import rollDice from '@/lib/rollDice'
 import { useState } from 'react'
-import { useCharacteristicsSettings } from '@/context/SettingsContext'
+import { useCharacteristicsSettings } from '@/context/CharacteristicsSettingsContext'
 
 export default function DicePool() {
     // As an alternative to rolling each stat separately players may

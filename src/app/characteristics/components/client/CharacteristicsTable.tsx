@@ -5,7 +5,7 @@ import { StatBlock } from '@/types/StatBlock'
 import { useState } from 'react'
 import { DndContext } from '@dnd-kit/core'
 import { Droppable } from '@/components/Droppable'
-import { useCharacteristicsSettings } from '@/context/SettingsContext'
+import { useCharacteristicsSettings } from '@/context/CharacteristicsSettingsContext'
 
 // TODO:
 // Needs some work to get the drag and drop working:

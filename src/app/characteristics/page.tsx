@@ -3,7 +3,7 @@
 import {
     CharacteristicsSettingsProvider,
     useCharacteristicsSettings,
-} from '@/context/SettingsContext'
+} from '@/context/CharacteristicsSettingsContext'
 
 import DicePool from './components/client/DicePool'
 import CharacteristicsTable from './components/client/CharacteristicsTable'
