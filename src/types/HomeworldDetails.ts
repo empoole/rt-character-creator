@@ -2,6 +2,7 @@ import { Skill } from './Skill'
 import { Talent } from './Talent'
 
 export type HomeworldDetails = {
+    id: number
     title: string
     fluff: {
         quote?: string

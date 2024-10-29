@@ -1,5 +1,7 @@
 'use client'
 
+// œ∑´®†¥¨ˆøπ“‘«åß∂ƒ©˙∆˚¬……æ≈ç√∫µ≤≥÷¡™£¢∞§¶•ªº–≠`þçşðħłįø
+
 import { NodeSelections } from '@/types/NodeSelections'
 
 export default function PathNode({
@@ -48,9 +50,13 @@ export default function PathNode({
                 disabled={disabled}
             />
             {name}
-            <div className="flex">
-                <button>[ Details ]</button> {/* This opens the modal */}
+            <div className="flex space-around align-center justify-center">
+                <button className="border border-solid border-slate-500">
+                    [ º Details º ]
+                </button>
+                {/* This opens the modal */}
                 <button
+                    className="border border-solid border-slate-500"
                     onClick={() => {
                         if (!disabled) {
                             setSelections({ ...selections, [level]: nodeId })
@@ -58,7 +64,7 @@ export default function PathNode({
                         }
                     }}
                 >
-                    [ Select ]
+                    [ ∆ Select ∆ ]
                 </button>
             </div>
         </div>
